@@ -1,2 +1,3 @@
-This shows off extra animation in the detail pane of UISplitViewController when using it
-with UITabBarController. I don't think this is supported.
+This originally showed off extra animation in the detail pane of UISplitViewController when using it
+with MonoTouch.Dialog DialogViewController. But adding Autorotate=true to DialogViewController
+fixed the issue, and this code has been updated with the fix.
