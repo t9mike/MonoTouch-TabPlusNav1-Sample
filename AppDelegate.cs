@@ -9,19 +9,15 @@ namespace TabPlusNav1
     [Register ("AppDelegate")]
     public class AppDelegate : UIApplicationDelegate
     {
-        UIWindow Window;
+        UIWindow App_Window;
+		UITabBarController Tab_Bar_Controller;
 		
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
         {   
-            // Create the main window and add the navigation controller as a subview
-            Window = new UIWindow (UIScreen.MainScreen.Bounds);
-            Window.MakeKeyAndVisible ();
-			
-			MyApp.Tab_Bar_Controller = new MyTabBarController();			
-			Window.AddSubviews(MyApp.Tab_Bar_Controller.View);	
-					
-			Window.SetNeedsDisplay();
-			Window.MakeKeyAndVisible();
+            App_Window = new UIWindow (UIScreen.MainScreen.Bounds);
+			Tab_Bar_Controller = new MyTabBarController();	
+			App_Window.RootViewController = Tab_Bar_Controller;
+			App_Window.MakeKeyAndVisible();
 						
 			return true;
         }		

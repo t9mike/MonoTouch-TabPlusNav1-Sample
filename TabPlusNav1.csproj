@@ -73,14 +73,13 @@
     <Compile Include="MuegelUITabBarController.cs" />
     <Compile Include="MyNavigationController.cs" />
     <Compile Include="Lavel1DialogViewController.cs" />
-    <Compile Include="MyApp.cs" />
     <Compile Include="Level2DialogViewController.cs" />
     <Compile Include="MySplitViewController.cs" />
     <Compile Include="ToDoViewController.cs" />
     <Compile Include="ToDoView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Git\Main\Libraries\Free\MonoTouch.Dialog\MonoTouch.Dialog\MonoTouch.Dialog.csproj">
+    <ProjectReference Include="..\..\MonoTouch-Samples\One-Offs\TweetStation\MonoTouch.Dialog\MonoTouch.Dialog\MonoTouch.Dialog.csproj">
       <Project>{3FFBFFF8-5560-4EDE-82E5-3FFDFBBA8A50}</Project>
       <Name>MonoTouch.Dialog</Name>
     </ProjectReference>
