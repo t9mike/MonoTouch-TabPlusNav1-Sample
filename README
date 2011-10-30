@@ -1,3 +1,1 @@
-This originally showed off extra animation in the detail pane of UISplitViewController when using it
-with MonoTouch.Dialog DialogViewController. But adding Autorotate=true to DialogViewController
-fixed the issue, and this code has been updated with the fix.
+This shows a runtime error when using ServiceStack v2.2 JSON on iOS
